@@ -6,8 +6,8 @@ manifest:
       url-base: https://github.com/badjeff
     - name: caksoylar  # <-- RGB LED
       url-base: https://github.com/caksoylar
-    - name: sekigon-gonnoc
-      url-base: https://github.com/sekigon-gonnoc
+    - name: caksoylar  # <-- Battery level smoothing
+      url-base: https://github.com/takamaru-fpv
 
   projects:
     # ZMK: DYA Studio 用カスタム RPC サブシステム付き cormoran fork
@@ -16,8 +16,8 @@ manifest:
       revision: v0.3-branch+dya
       import: app/west.yml
     - name: zmk-feature-non-lipo-battery-management
-      remote: sekigon-gonnoc
-      revision: main
+      remote: takamaru-fpv
+      revision: voltage_division
 
     # DYA Studio モジュール（すべて cormoran リポジトリ）
     - name: zmk-module-ble-management
