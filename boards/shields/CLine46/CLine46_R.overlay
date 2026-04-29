@@ -72,8 +72,8 @@
 
 
     scroller {
-        layers = <3>;
-        input-processors = 
+        layers = <4>;  // Layer 4 (SCROLL) でスクロールモード発動 / Layer 0の &lt 4 LGUI 長押しで有効化
+        input-processors =
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             // <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,       //Y軸反転
